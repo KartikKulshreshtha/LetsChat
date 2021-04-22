@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LetsChat-Realtime Chat Application</title>
+    <!-- defer krna mtlb humari script background mein load hoti h to jb wo DOM mein ati h to 
+    script run ho jati h to hume scrit ko niche likhne ki jarurat nhi hoti -->
+    <!-- And is script ke through humne server aur client ko connect kr liya h  -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="Script/client.js"></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="/chat.png" alt="" />
+      <h1>Welcome to LetsChat</h1>
+    </nav>
+    
+    <div class="container">
+      <!-- <div class="message right">kartik:Hey didi</div>
+      <div class="message left">didi:Hey kartik</div> -->
+    </div>
+
+    <div class="send">
+      <form action="#" id="send-container">
+        <input type="text" name="messageInp" id="messageInp" />
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
